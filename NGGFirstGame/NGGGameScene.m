@@ -7,23 +7,108 @@
 //
 
 #import "NGGGameScene.h"
+#import "Constants.h"
 
 @implementation NGGGameScene
+
+
+- (void)addScore
+{
+    self.score ++;
+    self.scoreLabel.text = [NSString stringWithFormat:@"%03d!",self.score];
+}
+
+- (void)jump
+{
+    NSLog(@"JUMP");
+    self.player.physicsBody.velocity = CGVectorMake(0, kPlayerJumpPower);
+}
+
+- (void)resume {
+    self.state = GAME_STATE_PLAYING;
+}
+
+- (void) pause {
+    self.state = GAME_STATE_PAUSED;
+}
+
+- (void) gameOver {
+    NSLog(@"GAME OVER");
+    self.state = GAME_STATE_DEAD;
+}
+
+- (void) gameStart {
+    NSLog(@"GAME START");
+    self.state = GAME_STATE_PLAYING;
+    self.player.physicsBody.dynamic = YES;
+    [self removeStartLabel];
+    [self jump];
+}
+
+- (void) removeStartLabel
+{
+    [[self childNodeWithName:kStartLabelName] removeFromParent];
+}
+
+#pragma mark - SKPhysicsContactDelegate
+- (void)didBeginContact:(SKPhysicsContact *)contact
+{
+    NSLog(@"HIT a%@ b%@",contact.bodyA.node.name,contact.bodyB.node.name);
+    if ([contact.bodyA.node.name isEqualToString:kPlayerName] || [contact.bodyB.node.name isEqualToString:kPlayerName]) {
+        [self gameOver];
+    }
+}
+
+- (void)didEndContact:(SKPhysicsContact *)contact
+{
+    
+}
+
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
+        self.state = GAME_STATE_NONE;
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        self.physicsWorld.contactDelegate = self;
+        self.score = 0;
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"background"];
+        background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [self addChild:background];
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        self.player = [SKSpriteNode spriteNodeWithImageNamed:@"player"];
+        self.player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [self addChild:self.player];
+        self.player.name = kPlayerName;
+        self.player.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:kPlayerRadius];
+        self.player.physicsBody.contactTestBitMask = 1;
+        self.player.physicsBody.allowsRotation = YES;
+        self.player.physicsBody.dynamic = NO;
+        self.player.physicsBody.mass = 0.001;
         
-        [self addChild:myLabel];
+        SKSpriteNode *ground = [SKSpriteNode spriteNodeWithImageNamed:@"ground"];
+        ground.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(ground.frame));
+        ground.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:ground.frame.size];
+        ground.physicsBody.dynamic = NO;
+        ground.name = kGroundName;
+        [self addChild:ground];
+        ground.physicsBody.contactTestBitMask = 1;
+        
+        CGFloat paddingHight = 20;
+        self.scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"HelveticaNeue"];
+        self.scoreLabel.text = [NSString stringWithFormat:@"%03d!",self.score];
+        self.scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMaxY(self.frame) - CGRectGetHeight(self.scoreLabel.frame) - paddingHight);
+        [self addChild:self.scoreLabel];
+        
+        SKLabelNode* startLabel = [SKLabelNode labelNodeWithFontNamed:@"HelveticaNeue"];
+        startLabel.text = @"タップでドン！";
+        startLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        startLabel.name = kStartLabelName;
+        [self addChild:startLabel];
+        
+        
+        self.state = GAME_STATE_READY;
     }
     return self;
 }
@@ -31,19 +116,25 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    if (self.state == GAME_STATE_READY) {
+        [self gameStart];
     }
+    if (self.state == GAME_STATE_PLAYING) {
+        [self jump];
+    }
+    
+    if (self.state == GAME_STATE_PAUSED) {
+        [self resume];
+    }
+    
+    if (self.state == GAME_STATE_DEAD) {
+        [self jump];
+    }
+
 }
 
 -(void)update:(CFTimeInterval)currentTime {

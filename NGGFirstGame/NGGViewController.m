@@ -7,25 +7,32 @@
 //
 
 #import "NGGViewController.h"
-#import "NGGMyScene.h"
+#import "NGGGameScene.h"
 
 @implementation NGGViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
+- (void) viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
-    SKScene * scene = [NGGMyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
+    if (!skView.scene) { // because viewWillLayoutSubviews is called twice!
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
+        
+        // Create and configure the scene.
+        SKScene * scene = [NGGGameScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        // Present the scene.
+        [skView presentScene:scene];
+    }
 }
 
 - (BOOL)shouldAutorotate

@@ -1,5 +1,5 @@
 //
-//  NGGMyScene.h
+//  NGGGameScene.h
 //  NGGFirstGame
 //
 
@@ -8,6 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface NGGMyScene : SKScene
+@interface NGGGameScene : SKScene
 
 @end

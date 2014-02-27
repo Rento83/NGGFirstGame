@@ -1,14 +1,14 @@
 //
-//  NGGMyScene.m
+//  NGGGameScene.m
 //  NGGFirstGame
 //
 //  Created by Rento Usui on 2014/02/28.
 //  Copyright (c) 2014年 Rento. All rights reserved.
 //
 
-#import "NGGMyScene.h"
+#import "NGGGameScene.h"
 
-@implementation NGGMyScene
+@implementation NGGGameScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {

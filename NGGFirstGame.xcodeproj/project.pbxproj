@@ -16,7 +16,7 @@
 		CCC78F8B18BFA88F00451F36 /* NGGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78F8A18BFA88F00451F36 /* NGGAppDelegate.m */; };
 		CCC78F8E18BFA88F00451F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC78F8C18BFA88F00451F36 /* Main.storyboard */; };
 		CCC78F9118BFA88F00451F36 /* NGGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78F9018BFA88F00451F36 /* NGGViewController.m */; };
-		CCC78F9418BFA88F00451F36 /* NGGMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78F9318BFA88F00451F36 /* NGGMyScene.m */; };
+		CCC78F9418BFA88F00451F36 /* NGGGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78F9318BFA88F00451F36 /* NGGGameScene.m */; };
 		CCC78F9618BFA88F00451F36 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78F9518BFA88F00451F36 /* Spaceship.png */; };
 		CCC78F9818BFA88F00451F36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC78F9718BFA88F00451F36 /* Images.xcassets */; };
 		CCC78F9F18BFA88F00451F36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC78F9E18BFA88F00451F36 /* XCTest.framework */; };
@@ -51,8 +51,8 @@
 		CCC78F8D18BFA88F00451F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC78F8F18BFA88F00451F36 /* NGGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGGViewController.h; sourceTree = "<group>"; };
 		CCC78F9018BFA88F00451F36 /* NGGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGViewController.m; sourceTree = "<group>"; };
-		CCC78F9218BFA88F00451F36 /* NGGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGGMyScene.h; sourceTree = "<group>"; };
-		CCC78F9318BFA88F00451F36 /* NGGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGMyScene.m; sourceTree = "<group>"; };
+		CCC78F9218BFA88F00451F36 /* NGGGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGGGameScene.h; sourceTree = "<group>"; };
+		CCC78F9318BFA88F00451F36 /* NGGGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGGameScene.m; sourceTree = "<group>"; };
 		CCC78F9518BFA88F00451F36 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		CCC78F9718BFA88F00451F36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCC78F9D18BFA88F00451F36 /* NGGFirstGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGGFirstGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,8 +126,8 @@
 				CCC78F8C18BFA88F00451F36 /* Main.storyboard */,
 				CCC78F8F18BFA88F00451F36 /* NGGViewController.h */,
 				CCC78F9018BFA88F00451F36 /* NGGViewController.m */,
-				CCC78F9218BFA88F00451F36 /* NGGMyScene.h */,
-				CCC78F9318BFA88F00451F36 /* NGGMyScene.m */,
+				CCC78F9218BFA88F00451F36 /* NGGGameScene.h */,
+				CCC78F9318BFA88F00451F36 /* NGGGameScene.m */,
 				CCC78F9518BFA88F00451F36 /* Spaceship.png */,
 				CCC78F9718BFA88F00451F36 /* Images.xcassets */,
 				CCC78F8118BFA88F00451F36 /* Supporting Files */,
@@ -266,7 +266,7 @@
 				CCC78F8718BFA88F00451F36 /* main.m in Sources */,
 				CCC78F8B18BFA88F00451F36 /* NGGAppDelegate.m in Sources */,
 				CCC78F9118BFA88F00451F36 /* NGGViewController.m in Sources */,
-				CCC78F9418BFA88F00451F36 /* NGGMyScene.m in Sources */,
+				CCC78F9418BFA88F00451F36 /* NGGGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,6 @@
 		CCC78F8E18BFA88F00451F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC78F8C18BFA88F00451F36 /* Main.storyboard */; };
 		CCC78F9118BFA88F00451F36 /* NGGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78F9018BFA88F00451F36 /* NGGViewController.m */; };
 		CCC78F9418BFA88F00451F36 /* NGGGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78F9318BFA88F00451F36 /* NGGGameScene.m */; };
-		CCC78F9618BFA88F00451F36 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78F9518BFA88F00451F36 /* Spaceship.png */; };
 		CCC78F9818BFA88F00451F36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC78F9718BFA88F00451F36 /* Images.xcassets */; };
 		CCC78F9F18BFA88F00451F36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC78F9E18BFA88F00451F36 /* XCTest.framework */; };
 		CCC78FA018BFA88F00451F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC78F7818BFA88F00451F36 /* Foundation.framework */; };
@@ -27,6 +26,12 @@
 		CCC78FB918BFAC6800451F36 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FB618BFAC6800451F36 /* background@2x.png */; };
 		CCC78FBA18BFAC6800451F36 /* ground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FB718BFAC6800451F36 /* ground@2x.png */; };
 		CCC78FBB18BFAC6800451F36 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FB818BFAC6800451F36 /* player@2x.png */; };
+		CCC78FBF18BFBD0B00451F36 /* pole0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FBC18BFBD0B00451F36 /* pole0@2x.png */; };
+		CCC78FC018BFBD0B00451F36 /* pole1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FBD18BFBD0B00451F36 /* pole1@2x.png */; };
+		CCC78FC118BFBD0B00451F36 /* pole2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FBE18BFBD0B00451F36 /* pole2@2x.png */; };
+		CCC78FC818C04C5A00451F36 /* NGGPoleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78FC718C04C5A00451F36 /* NGGPoleNode.m */; };
+		CCC78FE718C1D68600451F36 /* DeadParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FE518C1D68600451F36 /* DeadParticle.sks */; };
+		CCC78FE818C1D68600451F36 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FE618C1D68600451F36 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +61,6 @@
 		CCC78F9018BFA88F00451F36 /* NGGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGViewController.m; sourceTree = "<group>"; };
 		CCC78F9218BFA88F00451F36 /* NGGGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGGGameScene.h; sourceTree = "<group>"; };
 		CCC78F9318BFA88F00451F36 /* NGGGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGGameScene.m; sourceTree = "<group>"; };
-		CCC78F9518BFA88F00451F36 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		CCC78F9718BFA88F00451F36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCC78F9D18BFA88F00451F36 /* NGGFirstGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGGFirstGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC78F9E18BFA88F00451F36 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -67,6 +71,14 @@
 		CCC78FB618BFAC6800451F36 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		CCC78FB718BFAC6800451F36 /* ground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ground@2x.png"; sourceTree = "<group>"; };
 		CCC78FB818BFAC6800451F36 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		CCC78FBC18BFBD0B00451F36 /* pole0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole0@2x.png"; sourceTree = "<group>"; };
+		CCC78FBD18BFBD0B00451F36 /* pole1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole1@2x.png"; sourceTree = "<group>"; };
+		CCC78FBE18BFBD0B00451F36 /* pole2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole2@2x.png"; sourceTree = "<group>"; };
+		CCC78FC618C04C5A00451F36 /* NGGPoleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGPoleNode.h; sourceTree = "<group>"; };
+		CCC78FC718C04C5A00451F36 /* NGGPoleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGPoleNode.m; sourceTree = "<group>"; };
+		CCC78FE318C1D4D700451F36 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CCC78FE518C1D68600451F36 /* DeadParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DeadParticle.sks; sourceTree = "<group>"; };
+		CCC78FE618C1D68600451F36 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 		CCC78F7718BFA88F00451F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCC78FE318C1D4D700451F36 /* AudioToolbox.framework */,
 				CCC78F7818BFA88F00451F36 /* Foundation.framework */,
 				CCC78F7A18BFA88F00451F36 /* CoreGraphics.framework */,
 				CCC78F7C18BFA88F00451F36 /* UIKit.framework */,
@@ -137,9 +150,12 @@
 				CCC78F9018BFA88F00451F36 /* NGGViewController.m */,
 				CCC78F9218BFA88F00451F36 /* NGGGameScene.h */,
 				CCC78F9318BFA88F00451F36 /* NGGGameScene.m */,
-				CCC78F9518BFA88F00451F36 /* Spaceship.png */,
+				CCC78FC618C04C5A00451F36 /* NGGPoleNode.h */,
+				CCC78FC718C04C5A00451F36 /* NGGPoleNode.m */,
 				CCC78F9718BFA88F00451F36 /* Images.xcassets */,
 				CCC78F8118BFA88F00451F36 /* Supporting Files */,
+				CCC78FE518C1D68600451F36 /* DeadParticle.sks */,
+				CCC78FE618C1D68600451F36 /* spark.png */,
 			);
 			path = NGGFirstGame;
 			sourceTree = "<group>";
@@ -176,6 +192,9 @@
 		CCC78FB518BFAC6800451F36 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CCC78FBC18BFBD0B00451F36 /* pole0@2x.png */,
+				CCC78FBD18BFBD0B00451F36 /* pole1@2x.png */,
+				CCC78FBE18BFBD0B00451F36 /* pole2@2x.png */,
 				CCC78FB618BFAC6800451F36 /* background@2x.png */,
 				CCC78FB718BFAC6800451F36 /* ground@2x.png */,
 				CCC78FB818BFAC6800451F36 /* player@2x.png */,
@@ -261,13 +280,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC78FE818C1D68600451F36 /* spark.png in Resources */,
 				CCC78F8518BFA88F00451F36 /* InfoPlist.strings in Resources */,
+				CCC78FBF18BFBD0B00451F36 /* pole0@2x.png in Resources */,
+				CCC78FC018BFBD0B00451F36 /* pole1@2x.png in Resources */,
 				CCC78FBB18BFAC6800451F36 /* player@2x.png in Resources */,
 				CCC78FBA18BFAC6800451F36 /* ground@2x.png in Resources */,
+				CCC78FE718C1D68600451F36 /* DeadParticle.sks in Resources */,
 				CCC78F9818BFA88F00451F36 /* Images.xcassets in Resources */,
-				CCC78F9618BFA88F00451F36 /* Spaceship.png in Resources */,
 				CCC78FB918BFAC6800451F36 /* background@2x.png in Resources */,
 				CCC78F8E18BFA88F00451F36 /* Main.storyboard in Resources */,
+				CCC78FC118BFBD0B00451F36 /* pole2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC78F8718BFA88F00451F36 /* main.m in Sources */,
+				CCC78FC818C04C5A00451F36 /* NGGPoleNode.m in Sources */,
 				CCC78F8B18BFA88F00451F36 /* NGGAppDelegate.m in Sources */,
 				CCC78F9118BFA88F00451F36 /* NGGViewController.m in Sources */,
 				CCC78F9418BFA88F00451F36 /* NGGGameScene.m in Sources */,
@@ -500,6 +524,7 @@
 				CCC78FB018BFA88F00451F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCC78FB118BFA88F00451F36 /* Build configuration list for PBXNativeTarget "NGGFirstGameTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +533,7 @@
 				CCC78FB318BFA88F00451F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

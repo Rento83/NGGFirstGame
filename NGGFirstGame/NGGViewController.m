@@ -16,6 +16,19 @@
     [super viewDidLoad];
 }
 
+//BGMならすならいるよ！
+/*
+- (void)playBackGroundMusic
+{
+    NSError *error;
+    NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"ファイル名" withExtension:@"拡張子"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+}
+*/
+
 - (void) viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];

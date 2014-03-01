@@ -14,15 +14,17 @@ typedef enum {
     GAME_STATE_PLAYING,
     GAME_STATE_PAUSED,
     GAME_STATE_DEAD,
+    GAME_STATE_GAMEOVER,
 } GAME_STATE;
 
 @interface NGGGameScene : SKScene < SKPhysicsContactDelegate >
 {
-    
+    CFTimeInterval lastPoleGenerateTime;
 }
 
 @property (nonatomic, strong) SKSpriteNode *player;
 @property (nonatomic, strong) SKLabelNode *scoreLabel;
+@property (nonatomic, strong) NSMutableArray *poles;
 @property (nonatomic) NSInteger score;
 @property (nonatomic) GAME_STATE state;
 

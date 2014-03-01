@@ -23,15 +23,17 @@
 		CCC78FA118BFA88F00451F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC78F7C18BFA88F00451F36 /* UIKit.framework */; };
 		CCC78FA918BFA88F00451F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FA718BFA88F00451F36 /* InfoPlist.strings */; };
 		CCC78FAB18BFA88F00451F36 /* NGGFirstGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78FAA18BFA88F00451F36 /* NGGFirstGameTests.m */; };
-		CCC78FB918BFAC6800451F36 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FB618BFAC6800451F36 /* background@2x.png */; };
-		CCC78FBA18BFAC6800451F36 /* ground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FB718BFAC6800451F36 /* ground@2x.png */; };
-		CCC78FBB18BFAC6800451F36 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FB818BFAC6800451F36 /* player@2x.png */; };
-		CCC78FBF18BFBD0B00451F36 /* pole0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FBC18BFBD0B00451F36 /* pole0@2x.png */; };
-		CCC78FC018BFBD0B00451F36 /* pole1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FBD18BFBD0B00451F36 /* pole1@2x.png */; };
-		CCC78FC118BFBD0B00451F36 /* pole2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FBE18BFBD0B00451F36 /* pole2@2x.png */; };
 		CCC78FC818C04C5A00451F36 /* NGGPoleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC78FC718C04C5A00451F36 /* NGGPoleNode.m */; };
 		CCC78FE718C1D68600451F36 /* DeadParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FE518C1D68600451F36 /* DeadParticle.sks */; };
 		CCC78FE818C1D68600451F36 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FE618C1D68600451F36 /* spark.png */; };
+		CCC78FF218C1DB3200451F36 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FEA18C1DB3200451F36 /* background@2x.png */; };
+		CCC78FF318C1DB3200451F36 /* ground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FEB18C1DB3200451F36 /* ground@2x.png */; };
+		CCC78FF418C1DB3200451F36 /* player1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FEC18C1DB3200451F36 /* player1@2x.png */; };
+		CCC78FF518C1DB3200451F36 /* player2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FED18C1DB3200451F36 /* player2@2x.png */; };
+		CCC78FF618C1DB3200451F36 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FEE18C1DB3200451F36 /* player@2x.png */; };
+		CCC78FF718C1DB3200451F36 /* pole0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FEF18C1DB3200451F36 /* pole0@2x.png */; };
+		CCC78FF818C1DB3200451F36 /* pole1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FF018C1DB3200451F36 /* pole1@2x.png */; };
+		CCC78FF918C1DB3200451F36 /* pole2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC78FF118C1DB3200451F36 /* pole2@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,17 +70,19 @@
 		CCC78FA818BFA88F00451F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CCC78FAA18BFA88F00451F36 /* NGGFirstGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGFirstGameTests.m; sourceTree = "<group>"; };
 		CCC78FB418BFAA5200451F36 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		CCC78FB618BFAC6800451F36 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
-		CCC78FB718BFAC6800451F36 /* ground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ground@2x.png"; sourceTree = "<group>"; };
-		CCC78FB818BFAC6800451F36 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
-		CCC78FBC18BFBD0B00451F36 /* pole0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole0@2x.png"; sourceTree = "<group>"; };
-		CCC78FBD18BFBD0B00451F36 /* pole1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole1@2x.png"; sourceTree = "<group>"; };
-		CCC78FBE18BFBD0B00451F36 /* pole2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole2@2x.png"; sourceTree = "<group>"; };
 		CCC78FC618C04C5A00451F36 /* NGGPoleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGPoleNode.h; sourceTree = "<group>"; };
 		CCC78FC718C04C5A00451F36 /* NGGPoleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGPoleNode.m; sourceTree = "<group>"; };
 		CCC78FE318C1D4D700451F36 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CCC78FE518C1D68600451F36 /* DeadParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DeadParticle.sks; sourceTree = "<group>"; };
 		CCC78FE618C1D68600451F36 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CCC78FEA18C1DB3200451F36 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		CCC78FEB18C1DB3200451F36 /* ground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ground@2x.png"; sourceTree = "<group>"; };
+		CCC78FEC18C1DB3200451F36 /* player1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player1@2x.png"; sourceTree = "<group>"; };
+		CCC78FED18C1DB3200451F36 /* player2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player2@2x.png"; sourceTree = "<group>"; };
+		CCC78FEE18C1DB3200451F36 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		CCC78FEF18C1DB3200451F36 /* pole0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole0@2x.png"; sourceTree = "<group>"; };
+		CCC78FF018C1DB3200451F36 /* pole1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole1@2x.png"; sourceTree = "<group>"; };
+		CCC78FF118C1DB3200451F36 /* pole2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pole2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				CCC78F8018BFA88F00451F36 /* NGGFirstGame */,
-				CCC78FB518BFAC6800451F36 /* images */,
 				CCC78FA418BFA88F00451F36 /* NGGFirstGameTests */,
 				CCC78F7718BFA88F00451F36 /* Frameworks */,
 				CCC78F7618BFA88F00451F36 /* Products */,
@@ -152,6 +155,7 @@
 				CCC78F9318BFA88F00451F36 /* NGGGameScene.m */,
 				CCC78FC618C04C5A00451F36 /* NGGPoleNode.h */,
 				CCC78FC718C04C5A00451F36 /* NGGPoleNode.m */,
+				CCC78FE918C1DB3200451F36 /* images */,
 				CCC78F9718BFA88F00451F36 /* Images.xcassets */,
 				CCC78F8118BFA88F00451F36 /* Supporting Files */,
 				CCC78FE518C1D68600451F36 /* DeadParticle.sks */,
@@ -189,18 +193,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CCC78FB518BFAC6800451F36 /* images */ = {
+		CCC78FE918C1DB3200451F36 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CCC78FBC18BFBD0B00451F36 /* pole0@2x.png */,
-				CCC78FBD18BFBD0B00451F36 /* pole1@2x.png */,
-				CCC78FBE18BFBD0B00451F36 /* pole2@2x.png */,
-				CCC78FB618BFAC6800451F36 /* background@2x.png */,
-				CCC78FB718BFAC6800451F36 /* ground@2x.png */,
-				CCC78FB818BFAC6800451F36 /* player@2x.png */,
+				CCC78FEA18C1DB3200451F36 /* background@2x.png */,
+				CCC78FEB18C1DB3200451F36 /* ground@2x.png */,
+				CCC78FEC18C1DB3200451F36 /* player1@2x.png */,
+				CCC78FED18C1DB3200451F36 /* player2@2x.png */,
+				CCC78FEE18C1DB3200451F36 /* player@2x.png */,
+				CCC78FEF18C1DB3200451F36 /* pole0@2x.png */,
+				CCC78FF018C1DB3200451F36 /* pole1@2x.png */,
+				CCC78FF118C1DB3200451F36 /* pole2@2x.png */,
 			);
-			name = images;
-			path = NGGFirstGame/images;
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,16 +286,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC78FE818C1D68600451F36 /* spark.png in Resources */,
+				CCC78FF418C1DB3200451F36 /* player1@2x.png in Resources */,
+				CCC78FF818C1DB3200451F36 /* pole1@2x.png in Resources */,
+				CCC78FF518C1DB3200451F36 /* player2@2x.png in Resources */,
+				CCC78FF618C1DB3200451F36 /* player@2x.png in Resources */,
+				CCC78FF918C1DB3200451F36 /* pole2@2x.png in Resources */,
+				CCC78FF318C1DB3200451F36 /* ground@2x.png in Resources */,
 				CCC78F8518BFA88F00451F36 /* InfoPlist.strings in Resources */,
-				CCC78FBF18BFBD0B00451F36 /* pole0@2x.png in Resources */,
-				CCC78FC018BFBD0B00451F36 /* pole1@2x.png in Resources */,
-				CCC78FBB18BFAC6800451F36 /* player@2x.png in Resources */,
-				CCC78FBA18BFAC6800451F36 /* ground@2x.png in Resources */,
+				CCC78FF718C1DB3200451F36 /* pole0@2x.png in Resources */,
 				CCC78FE718C1D68600451F36 /* DeadParticle.sks in Resources */,
 				CCC78F9818BFA88F00451F36 /* Images.xcassets in Resources */,
-				CCC78FB918BFAC6800451F36 /* background@2x.png in Resources */,
+				CCC78FF218C1DB3200451F36 /* background@2x.png in Resources */,
 				CCC78F8E18BFA88F00451F36 /* Main.storyboard in Resources */,
-				CCC78FC118BFBD0B00451F36 /* pole2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

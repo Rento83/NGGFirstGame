@@ -57,15 +57,28 @@
 }
 
 #pragma mark - player control
+- (void)changePlayerToNomarlTexture
+{
+    [self.player setTexture:[SKTexture textureWithImageNamed:@"player"]];
+}
+
 - (void)jump
 {
     NSLog(@"JUMP");
     self.player.physicsBody.velocity = CGVectorMake(0, kPlayerJumpPower);
+    [self.player setTexture:[SKTexture textureWithImageNamed:@"player1"]];
+    [self.player runAction:[SKAction sequence:@[[SKAction waitForDuration:0.2], [SKAction performSelector:@selector(changePlayerToNomarlTexture) onTarget:self]]]];
+}
+
+- (void)changePlayerToDeadTexture
+{
+    [self.player setTexture:[SKTexture textureWithImageNamed:@"player2"]];
 }
 
 - (void)resetPlayer
 {
     [self.player removeAllActions];
+    [self changePlayerToNomarlTexture];
     self.player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     [self.player runAction:[SKAction rotateToAngle:DEGREES_TO_RADIANS(-10) duration:0]];
     self.player.physicsBody.velocity = CGVectorMake(0, 0);
@@ -215,7 +228,7 @@
     if (self.state == GAME_STATE_PLAYING) {
         self.state = GAME_STATE_DEAD;
         NSLog(@"DEAD");
-        
+        [self changePlayerToDeadTexture];
         [self stopPolesAction];
         [self shakeScreen];
         

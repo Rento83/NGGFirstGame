@@ -1,7 +1,8 @@
 NGGFirstGame
 ============
 
-This simple game made for the team "755Apps". The linsens is [MIT].
+This simple game made for the team "755Apps".   
+The linsens is [MIT].
 
 About
 ---------
@@ -15,6 +16,10 @@ SNS 7gogoから発足したアプリ開発チーム（適当）の最初のゲ�
 3. [メンバー](http://755apps.blogspot.jp/p/blog-page_24.html "メンバー表")
 4. [7gogoの部屋](http://7gogo.jp/lp/k5_WiBKUsf1WkVIvojdMdG== "7gogoの部屋")
 5. [作者のTwitter](https://twitter.com/rento83 "Twitter")
+
+UIKit version(made by osmszk)
+---------
+[https://github.com/osmszk/NGGThreader](https://github.com/osmszk/NGGThreader "UIKit ver.")
 
 License
 ----------
